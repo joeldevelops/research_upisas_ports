@@ -1,0 +1,18 @@
+interface CmdLib{
+	char[] getLine()
+	char[] getLineSecret()
+	}
+
+component provides io.Input requires native CmdLib lib {
+	
+	char[] Input:readln()
+		{
+		return lib.getLine()
+		}
+	
+	char[] Input:readlnSecret()
+		{
+		return lib.getLineSecret()
+		}
+	
+	}

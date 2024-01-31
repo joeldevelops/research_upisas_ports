@@ -1,0 +1,20 @@
+version: "3"
+services:
+  suave:
+    stdin_open: true
+    tty: true
+    container_name: suave
+    ports:
+      - "3000:3000"
+    image: ghcr.io/caesarw/suave-custom:main
+
+  upisas:
+    stdin_open: true
+    tty: true
+    container_name: upisas
+    environment:
+      - SUAVE_PROD=True
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    image: ghcr.io/caesarw/upisas-custom:main
+#    image: upisas:latest

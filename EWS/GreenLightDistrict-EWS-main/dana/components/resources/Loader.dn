@@ -1,0 +1,16 @@
+/*
+ {"description" : "Load components from a file (typically on a hard disk) into main memory (typically RAM). It's used when adding a new component into the running system, or when removing an existing component from that system. It is normally used by components that manage the current composition of the software system."}
+*/
+
+interface Loader{
+	/*
+	 {"@description" : "Load a component from a file into main memory."}
+	*/
+	IDC load(char path[], opt bool noAutoWire)
+	
+	/*
+	 {"@description" : "Load a component from an object file stored in memory."}
+	*/
+	IDC loadFrom(char objectFile[], opt bool noAutoWire)
+	
+	}

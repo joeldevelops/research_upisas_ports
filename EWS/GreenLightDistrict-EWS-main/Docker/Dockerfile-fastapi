@@ -1,0 +1,21 @@
+# Use the official Python image as the base image
+FROM python:3.10
+
+# Copy application code into the container
+COPY ./http_server/ /app/
+
+# Set the working directory to /app
+WORKDIR /app/
+
+# Set the url for accessing the emergent web server interface
+ENV EWS_URL="http://emergent_web_server:2011/meta"
+
+# Install dependencies
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Expose the port on which your FastAPI application will run
+EXPOSE 80
+
+# Start the server
+
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80", "--reload"]

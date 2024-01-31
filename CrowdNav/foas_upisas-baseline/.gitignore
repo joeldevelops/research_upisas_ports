@@ -1,0 +1,6 @@
+.idea
+demo-managed-system/node_modules
+demo-managed-system/package-lock.json
+venv
+__pycache__
+./q_table.csv

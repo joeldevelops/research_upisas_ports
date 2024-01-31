@@ -1,0 +1,25 @@
+FROM ubuntu:18.04
+
+
+COPY . /emergent_web_server/
+
+WORKDIR /emergent_web_server/dana/
+RUN chmod +x dana dnc
+ENV DANA_HOME=/emergent_web_server/dana/
+ENV PATH="${PATH}:/emergent_web_server/dana/"
+
+WORKDIR /emergent_web_server/
+RUN dnc make.dn
+RUN dana make.o -l all
+
+RUN apt-get update -y && apt-get install -y tmux libcompress-raw-zlib-perl
+
+
+WORKDIR /emergent_web_server/pal/
+
+# Expose the ports on which ews will run
+EXPOSE 2011
+EXPOSE 2012
+
+ENTRYPOINT ["/bin/bash", "./../Docker/emergentsys.sh"]
+

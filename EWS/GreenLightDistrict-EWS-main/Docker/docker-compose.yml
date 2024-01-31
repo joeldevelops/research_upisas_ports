@@ -1,0 +1,26 @@
+version: '3'
+services:
+  ews:
+    # ==== Comment out the next 4 lines for MacOS
+    # build:
+    #  context: ../
+    #  dockerfile: Docker/Dockerfile-ews
+    # image: ews-image
+    # ====
+    ports:
+      - "2011-2012:2011-2012"
+      # - "8080-8081:2011-2012"
+    # Uncomment the next line for MacOS
+    image: robertovrf/ews:1.0
+    container_name: emergent_web_server
+    
+  fastapi:
+    build:
+      context: ../
+      dockerfile: Docker/Dockerfile-fastapi
+    ports:
+      - "8000:80"
+    depends_on:
+      - ews
+    image: fastapi-image
+    container_name: fastapi_server

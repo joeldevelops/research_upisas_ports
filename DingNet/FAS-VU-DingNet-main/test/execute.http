@@ -1,0 +1,30 @@
+PUT http://localhost:3000/execute
+
+[
+    {
+        "id": 0,
+        "adaptations": [
+            {
+                "name": "power",
+                "value": 10
+            },
+            {
+                "name": "sampling_rate",
+                "value": 100
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "adaptations": [
+            {
+                "name": "power",
+                "value": 5
+            },
+            {
+                "name": "spreading_factor",
+                "value": 16
+            }
+        ]
+    }
+]

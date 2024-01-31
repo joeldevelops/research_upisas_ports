@@ -1,0 +1,40 @@
+repositories:
+  bluerov2_ignition:
+    type: git
+    url: https://github.com/Rezenders/bluerov2_ignition.git
+    version: 6756666
+  mavros:
+    type: git
+    url: https://github.com/mavlink/mavros.git
+    version: 3e1adc7
+  mavros_wrapper:
+    type: git
+    url: https://github.com/remaro-network/mavros_wrapper.git
+    version: 72b9743
+  remaro_worlds:
+    type: git
+    url: https://github.com/remaro-network/remaro_worlds.git
+    version: 2650f19
+  suave:
+    type: git
+    url: git@github.com:caesarw/suave.git
+  mc_mdl_tomasys:
+    type: git
+    url: https://github.com/meta-control/mc_mdl_tomasys.git
+    version: 1a491bb
+  mros_ontology:
+    type: git
+    url: https://github.com/meta-control/mros_ontology.git
+    version: 8b24a78
+  mc_mros_reasoner:
+    type: git
+    url: https://github.com/meta-control/mc_mros_reasoner.git
+    version: 9392f680fb33ed97f6105830dbb5593e68070419
+  system_modes:
+    type: git
+    url: https://github.com/micro-ROS/system_modes
+    version: 682ecb7
+  ros_gz:
+    type: git
+    url: https://github.com/gazebosim/ros_gz.git
+    version: 4a5972b

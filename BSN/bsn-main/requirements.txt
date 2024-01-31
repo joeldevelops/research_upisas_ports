@@ -1,0 +1,6 @@
+numpy
+jsonschema
+genson
+flask
+rospy2
+rospkg

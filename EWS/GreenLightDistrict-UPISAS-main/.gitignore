@@ -1,0 +1,5 @@
+.idea
+demo-managed-system/node_modules
+demo-managed-system/package-lock.json
+venv
+__pycache__

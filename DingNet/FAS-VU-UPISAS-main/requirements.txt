@@ -1,0 +1,12 @@
+requests~=2.31.0
+docker~=6.1.3
+jsonschema~=4.19.1
+rich~=13.6.0
+keras
+gym
+tensorflow
+gymnasium
+matplotlib
+torch
+IPython
+matplotlib

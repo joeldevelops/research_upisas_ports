@@ -1,0 +1,61 @@
+{
+    "type": "object",
+    "properties": {
+        "routingDuration":  {
+            "description": "Time it takes for routing",
+            "type": "integer"
+         },
+        "tickDuration": {
+            "description": "The time of the last simulation (last tick).",
+            "type": "integer"
+        },
+        "tickNumber": {
+            "description": "The number of steps in the simulation.",
+            "type": "integer"
+        },
+        "tripOverhead": {
+            "description": "The actual duration of a trip versus the theoretical case where routing is performed based only on static map data—length and maximum speed of each street.",
+            "type": "number"
+        },
+        "routeRandomSigma": {
+            "description": "The randomization sigma of edge weights.",
+            "type": "number"
+        },
+        "explorationPercentage": {
+            "description": "The percentage of routes we want to use for exploration.",
+            "type": "number"
+        },
+        "maxSpeedAndLengthFactor": {
+            "description": "How much the length/speed influences the routing.",
+            "type": "integer"
+        },
+        "averageEdgeDurationFactor": {
+            "description": "How much the averageEdgeFactor influences the routing.",
+            "type": "integer"
+        },
+        "freshnessUpdateFactor": {
+            "description": "How much the freshnessUpdateFactor influences the routing.",
+            "type": "integer"
+        },
+        "freshnessCutOffValue": {
+            "description": "If data is older than this we do not consider it in the algorithm.",
+            "type": "number"
+        },
+        "reRouteEveryTicks": {
+            "description": "Check for a new route every x times after the car starts.",
+            "type": "integer"
+        },
+        "averageTripOverhead": {
+            "description": "Global average of trip overhead.",
+            "type": "number"
+        },
+        "averageTripDuration": {
+            "description": "Global average of trip duration.",
+            "type": "number"
+        },
+        "numberOfCars" :{
+            "description": "Total number of cars in the simulation.",
+            "type": "number"
+        }
+    }
+}

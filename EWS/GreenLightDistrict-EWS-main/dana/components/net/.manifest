@@ -1,0 +1,13 @@
+{
+"defaultLinks":	[
+				{"interface": "TCPSocket", "component": "TCP"},
+				{"interface": "TCPServerSocket", "component": "TCP"},
+				{"interface": "TLSCertStore", "component": "TCP"},
+				{"interface": "TLSContext", "component": "TCP"},
+				{"interface": "TLS", "component": "TCP"},
+				{"interface": "TCPMonitor", "component": "TCP"},
+				{"interface": "UDPServer", "component": "UDP"},
+				{"interface": "UDPClient", "component": "UDP"},
+				{"interface": "UDPMonitor", "component": "UDP"}
+				]
+}

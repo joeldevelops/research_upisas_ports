@@ -1,0 +1,31 @@
+{
+    "routeRandomSigma": {
+        "domain": "continuous"
+    },
+    "explorationPercentage": {
+        "minimum": 0,
+        "maximum": 30,
+        "domain": "continuous"
+    },
+    "maxSpeedAndLengthFactor": {
+        "minimum": 1,
+        "maximum": 5,
+        "domain": "discrete"
+    },
+    "averageEdgeDurationFactor": {
+        "minimum": 1,
+        "maximum": 5,
+        "domain": "discrete"
+    },
+    "freshnessUpdateFactor": {
+        "minimum": 10,
+        "maximum": 20,
+        "domain": "discrete"
+    },
+    "freshnessCutOffValue": {
+        "domain": "continuous"
+    },
+    "reRouteEveryTicks": {
+        "domain": "discrete"
+    }
+}
